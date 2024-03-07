@@ -12,6 +12,7 @@ const Home = lazy(() => import("@pages/dashboard/home"));
 const Companies = lazy(() => import("@pages/dashboard/companies"));
 const Bots = lazy(() => import("@pages/dashboard/bots"));
 const Messages = lazy(() => import("@pages/dashboard/messages"));
+const Profile = lazy(() => import("@pages/dashboard/profile"));
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,7 @@ const router = createBrowserRouter([
       { path: "companies", element: <Companies /> },
       { path: "bots", element: <Bots /> },
       { path: "messages", element: <Messages /> },
+      { path: "profile", element: <Profile /> },
     ],
     errorElement: <ErrorPage />,
   },

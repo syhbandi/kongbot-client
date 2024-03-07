@@ -1,6 +1,6 @@
 import { FaRobot, FaWhatsapp } from "react-icons/fa6";
 import { FiMapPin, FiUser } from "react-icons/fi";
-import { MdLock } from "react-icons/md";
+import { MdEmail, MdLock } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Register = () => {
@@ -28,6 +28,16 @@ const Register = () => {
               autoFocus
             />
             <FiUser className="peer-focus:text-violet-800 text-gray-300 text-xl" />
+          </div>
+          <div className="h-12 border border-gray-300 rounded-lg flex items-center gap-3 focus-within:border-violet-800 focus-within:ring-1 focus-within:ring-violet-800 px-3 flex-row-reverse mb-5">
+            <input
+              type="email"
+              name="email"
+              className="outline-none peer flex-1"
+              placeholder="Email"
+              autoFocus
+            />
+            <MdEmail className="peer-focus:text-violet-800 text-gray-300 text-xl" />
           </div>
           <div className="h-12 border border-gray-300 rounded-lg flex items-center gap-3 focus-within:border-violet-800 focus-within:ring-1 focus-within:ring-violet-800 px-3 flex-row-reverse mb-5">
             <input
